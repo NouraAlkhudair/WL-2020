@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/css1/messages.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <style>
+        .emailMessage-button {
+  background-color: rgb(196, 194, 194);
+  border-radius: 3px;
+  width: 200px;
+  
+  color: white;
+  font-weight: bold;
+  padding: 15px 5px !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  top: -840px;
+  left: 450px;
+}
+
+.emailMessage-button:hover{
+    background-color: rgb(156, 156, 156);
+    font-size: 18px;
+    box-shadow: black;
+}
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <a href="index.html"></a>
+        <img id="logo" src="./resources/images1/wearloopslogo.jpg" alt="wearloopslogo" >
+        <nav>
+          <ul class="nav-bar-flex">
+                <!--<li><a href=""><spam>
+                    Sell
+                </spam></a></li>-->
+               
+                <li class="navbar-item"><a href="">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    Notifications</a></li>
+                <li class="navbar-item"><a href="">
+                    <i class="fas fa-user"></i>
+                    Account</a></li>
+                <li class="navbar-item"><a href="">
+                    <i class="far fa-heart"></i>
+                    Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div class="message-header-flex">
+            <h1>My Messages</h1>
+            
+            <input type="text" placeholder="Search My Messages...">
+
+            <button id="compose-button">Compose</button>
+
+        </div>
+
+
+        <div class="message-flex-container">
+    
+            <ul class="left-side-flex">
+                <li id="inbox">Inbox</li>
+                <li>Sent</li>
+                <li>All</li>
+                <li>Unread</li>
+                <li>Spam</li>
+                <li>Rubbish</li>
+            </ul>
+
+            <ul class="opposite-side-flex">
+                <img src="images/Emily-Didonato-Contact-Information.jpg" alt="" class="profilePicture2">
+               <div class="topSpace"><span></span></div>
+                <li id="username01">Username</li>
+
+            <!--Raiting-->
+            
+<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+            <!--end of raiting-->
+                <div class="spaceForLocation"><i class="fas fa-map-marker-alt"></i></div>
+                <li>Location</li>
+                <li class=localeTime><i class="far fa-clock"></i>Local time</li>
+                <li class="archive"><i class="fas fa-archive"></i>sales</li>
+                
+            </ul>
+            
+    
+            <!--<div class="right-side-flex"></div>-->
+    
+                
+                <ul class="top-side-flex">
+                    <!-- we will add an event listeners for these elements -->
+                    <li id="mssg-selector"><i class="fa fa-square-o" aria-hidden="true"></i></li>
+    
+                    <li>Mark Unread</li>
+                    <li>Mark Read</li>
+                    <li>Rubbish</li>
+                    <li>Creat Label</li> <!-- js functionality?-->
+    
+                    <li id="more-options"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></li>
+                    <div id="options">
+                        <ul class="options-items-ul">
+                            <i id="close-options" class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            <li>Archive</li>
+                            <li>Mark as Spam</li>
+                        </ul>
+                    </div>
+    
+                </ul>
+                
+    
+                <div id="message-display-area">
+                    <!-- this area to display the mssgs
+                    mostly js
+                    but add nice background img in css
+                    and add "no convo here!" when there are no mssgs -->
+
+
+                  
+    <div class="container">
+    
+        <div class="Container3" style="background-color:transparent">
+        
+            
+            </div>
+            <img src="images/Emily-Didonato-Contact-Information.jpg" alt="" class="profilePicture">
+            <img src="images/thought-catalog-LrHek0iJTAE-unsplash.jpg" alt="" class="profilePicture1">
+          
+           <!--- <span class="dot"></span>
+            <span class="dot1"></span>-->
+
+        <!-- partial:index.partial.html -->
+   <canvas id="mainstage"></canvas>
+   
+   <svg id="weirdFilter">
+       
+         <filter id="svgFilter"  >
+           <feTurbulence id="turbulence" type="turbulence" 
+   baseFrequency="0.009" numOctaves="6" />
+           <feDisplacementMap id="displacement" in="SourceGraphic" scale="200" />
+           
+         </filter>
+         
+       </svg>
+       <textarea name="Message" id="userMessage" cols="10" rows="10" placeholder="Type your reply"></textarea>
+       <textarea name="Message" id="emailMessage" cols="10" rows="10" placeholder="                                    ،أهلا 
+                              تم حجز بضاعة من المتجر
+                                 هل مؤكد الطلب؟
+       
+       "></textarea>
+       <a href="payment.html" class="emailMessage-button">نعم</a>
+       <a href="#" class="emailMessage-button">لا</a>
+
+       <!--- <input  type="text" id="emailMessage" placeholder="
+        ،أهلا 
+تم حجز بضاعة من المتجر.
+هل مؤكد الطلب؟
+        
+        " required >-->
+        <div class="wrappernew">
+  
+            <a href="#" class="btn">
+                
+              <i class="fab fa-telegram-plane fa-xs" ></i>
+            </a>
+
+            <a href="" class="pluss-btn">
+                <i class="fas fa-plus"></i>
+            </a>
+          </div>
+        <!--<img id="textAreaIcon" src="images1/text-size (1).jpg" alt="" height="50px" width="50px">-->
+        
+      
+       
+   <!-- type="fractalNoise" -->
+   <!-- type="turbulence" -->
+   <!-- partial -->
+     <script  src="./script.js"></script>
+   
+     </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        <!-- should be universal to all the pages -->
+        <div class="more">
+            <div>
+                <h2>Sell</h1>
+                <ul>
+                    <li><a>Sell At WEARLOOPS</a></li>
+                    <li><a>Teams</a></li>
+                    <li><a>Forums</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>About</h2>
+                <ul>
+                    <li><a>WEARLOOPS</a></li>
+                    <li><a>Policies</a></li>
+                    <li><a>Legal</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Help</h2>
+                <ul>
+                    <li><a>Customer Support</a></li>
+                    <li><a>Settings</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <ul>
+                <i class="fab fa-instagram fa-3x"></i>
+                
+                <li><a><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+                <li><a><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-bar">
+            <ul>
+                <li id="copyright">&#169; 2020 WEARLOOPS</li>
+                <li><a>Terms of use</a></li>
+                <li><a>Privacy</a></li>
+                <li><a>Internet-based ads</a></li>
+            </ul>
+        </div>
+
+        <script src="./resources/messages.js"></script>
+
+    </footer>
+
+  
+  
+</body>
+</html>

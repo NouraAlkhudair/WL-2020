@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--new onscroll links-->
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+<!--product card-->
+<style>
+ 
+ /*sidebar*/
+
+:root{
+   font-size: 16px;
+   font-family: 'Cairo'; 
+   --text-primary:#b6b6b6;
+   --text-secondary:#ececec;
+  /* --bg-primary:#23232e;*/
+   --bg-primary:#23232e00;
+   --bg-secondary:#141418;  
+}
+
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+main{
+    margin-right: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 5rem;
+   
+    height: 100vh;
+    position: relative;
+    float:right;
+   
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+   
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin:  0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.nav-item{
+    width:100%;
+}
+
+.nav-item:last-child{
+     margin-top: auto;
+}
+
+.nav-link{
+     display: flex;
+     align-items: center;
+     height: 5rem;
+     color: var(--text-primary);
+     text-decoration: none;
+     filter: grayscale(100%) opacity(0.7);
+     transition: var(--transition-speed);
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg{
+    min-width:2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+
+}
+
+
+
+
+svg:hover path {
+    fill: #ff7eee;
+    transition: all ease 0.3s;
+    transition: var(--transition-speed);
+  }
+  
+  svg path {
+      fill:gainsboro;
+    transition: all ease 0.3s;
+  }
+
+
+  .logo svg{
+    transform: rotate(0deg);
+   
+    transition: transform var(--transition-speed);
+}
+
+.navbar :hover .logo svg{
+    transition: all ease 0.3s;
+    transform: rotate(-180deg);
+}
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: "arial";
+        position: relative;
+        z-index: 300;
+        background-color: white;
+        margin-bottom: 200px;
+      }
+      
+      .price {
+        color: grey;
+        font-size: 14px;
+      }
+      
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+      }
+      
+      .card button:hover {
+        opacity: 0.7;
+      }
+      </style>
+</head>
+<body>
+
+
+    <nav>
+    
+   
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Clothes</a>
+     <ul>
+         <li><a href="#">Tops</a></li>
+         <li><a href="#">Bottoms</a></li>
+         <li><a href="#">Dresses</a></li>
+     </ul>
+     </li>
+        <li><a href="#">Bags</a>
+            <ul>
+                <li><a href="#">Handbag</a></li>
+                <li><a href="#">Backpack</a></li>
+                <li><a href="#">Clutch</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Accessories</a>
+            <ul>
+                <li><a href="#">Earrings</a></li>
+                <li><a href="#">Necklaces</a></li>
+                <li><a href="#">Bracelets</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About us</a>
+          
+        </li>
+
+     
+    </ul>
+
+    
+</nav>
+
+<nav id="signInRegister">
+    <ul>
+        <li id="SignIn"><i class="fas fa-user">
+         
+        </i>
+          
+      
+          
+        </li>
+        
+        <li id="Register"><i class="far fa-heart"></i>
+          <ul>
+               
+            <li><a href="messages.html"><i class="fas fa-envelope"></i>Messages</a></li>
+            <li ></i><a href="#"><i class="fas fa-gift"></i>Gift Card</a></li>
+            <li><a href="#">Sighn Out</a></li>
+        </ul>
+        </li>
+    </ul>
+    
+</nav>
+
+
+<nav id="WLlogo">
+    <ul>
+        <li id="theLogo"><a href="#"><img src="images/wlFigma.png" alt="" ></a>
+          
+        </li>
+        
+    </ul>
+    
+</nav>
+
+
+<!--------------Side bar------------>
+<nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="angle-double-right"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M149.333 216v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-80c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zM125.333 32H24C10.745 32 0 42.745 0 56v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zm80 448H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm-24-424v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24zm24 264H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24z"/></svg>
+          <span class="link-text">فئة</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M631.2 96.5L436.5 0C416.4 27.8 371.9 47.2 320 47.2S223.6 27.8 203.5 0L8.8 96.5c-7.9 4-11.1 13.6-7.2 21.5l57.2 114.5c4 7.9 13.6 11.1 21.5 7.2l56.6-27.7c10.6-5.2 23 2.5 23 14.4V480c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V226.3c0-11.8 12.4-19.6 23-14.4l56.6 27.7c7.9 4 17.5.8 21.5-7.2L638.3 118c4-7.9.8-17.6-7.1-21.5z"/></svg>
+          <span class="link-text">مناسبة</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg>
+          <span class="link-text">مقاس</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M0 448c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V128H0v320zm448-208c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v32c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-32zm0 120c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H456c-4.42 0-8-3.58-8-8v-16zM64 264c0-4.42 3.58-8 8-8h304c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm0 96c0-4.42 3.58-8 8-8h176c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zM624 32H16C7.16 32 0 39.16 0 48v48h640V48c0-8.84-7.16-16-16-16z"/></svg>
+          <span class="link-text">سعر</span>
+        </a>
+      </li>
+      <li class="nav-item" id="themeButton">
+          <a href="#" class="nav-link">
+            <svg
+              class="theme-icon"
+              id="lightIcon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="moon-stars"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+            >
+              <g class="fa-group">
+                <path
+                  fill="currentColor"
+                  d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                  class="fa-secondary"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                  class="fa-primary"
+                ></path>
+              </g>
+            </svg>
+            </a>
+            </li>
+
+
+  </ul>
+</nav>
+
+    <div class="overlay" id="overlay">
+        <h3>
+            Searching now...
+        </h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top" data-aos="fade-right">
+           <header>
+                <a href="#"></a>
+            </header> 
+
+            <h1> <span>The Investment </span>
+                and Shopping Experience
+            </h1>
+
+            <p>Show off your piece on our shelves and make it easy for it to find a new loving home.
+            </p>
+        
+            <div class="form-container">
+                <form action="">
+                    <div class="from-left">
+                    <label for="city">Enter your city:</label>
+                    <input type="text" name="city" id="city">
+                    <p>Example: "Jeddah"</p>
+                </div>
+                    <input type="button" value="Find Clothes Now" id="cta-btn">
+                </form>
+            </div>
+        </div>
+          
+        </section>
+      <section class="Authentic">
+        
+          <div class="right-col">
+
+  
+        
+        
+          </div>
+         
+      </section>
+
+      <script>
+          let btn = document.getElementById('cta-btn');
+          let overlay = document.getElementById('overlay');
+
+          btn.addEventListener('click',() => {
+              overlay.style.display='grid';
+              overlay.classList.add('animate-overlay')
+
+          })
+      </script>
+
+
+  
+ <!--product card-->
+  
+
+  
+  <div class="card">
+    <img src="images/valerie-elash-ccNojE60GkE-unsplash Cropped.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+    <p><button>Add to Cart</button></p>
+  </div>
+
+
+   <!--Services section new-->
+   <div class="services-section" >
+    <div class="inner-width">
+      <h1 class="section-title" > What we do</h1>
+      <p class="section-paragraph">Discover how our service can  help your business grow</p>
+      <div class="border"></div>
+      <div class="services-container">
+
+        <div class="service-box" >
+            <div class="service-icon1" >
+          <div class="service-icon" >
+            <i class="fas fa-certificate"></i>
+          </div>
+        </div>
+          <div class="service-title" >Varifide Brands</div>
+          <div class="service-desc">
+            The pieces displayed are all from international brands and companies.
+            Parts offered: new / new / used          </div>
+        </div>
+
+        <div class="service-box"> 
+            <div class="service-icon" >
+          <div class="service-icon2" >
+            <i class="fas fa-archive"></i>        </div>  </div>
+          <div class="service-title">Transparency in Trade</div>
+          <div class="service-desc">
+            We seek to facilitate the sale and purchase process between the two parties.
+            Where the seller can display his piece with all its details.          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-icon" >
+            <div class="service-icon3" >
+            <i class="fas fa-search-location"></i>
+          </div>
+        </div>
+          <div class="service-title">Customisable Search</div>
+          <div class="service-desc">
+            Easily search for the piece in detail.          </div>
+        </div>
+
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="posts-section" >
+    <div class="container">
+
+        <!-- partial:index.partial.html -->
+<canvas id="mainstage"></canvas>
+<svg id="weirdFilter">
+      <filter id="svgFilter"  >
+        <feTurbulence id="turbulence" type="turbulence" 
+baseFrequency="0.009" numOctaves="6" />
+        <feDisplacementMap id="displacement" in="SourceGraphic" scale="200" />
+        
+      </filter>
+    </svg>
+
+<!-- type="fractalNoise" -->
+<!-- type="turbulence" -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+        
+       
+    
+    </div>
+  </div>
+  
+
+ 
+  <!--onscroll animation-->
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="aos.js"></script>
+  <script type="text/javascript">
+   AOS.init({ duration:1800});
+  </script>-->
+
+
+  <!--Mishas code-->
+
+  <footer>
+
+    <!-- should be universal to all the pages -->
+    <div class="more">
+        <div>
+            <h2>Sell</h1>
+            <ul>
+                <li><a>Sell At WEARLOOPS</a></li>
+                <li><a>Teams</a></li>
+                <li><a>Forums</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h2>About</h2>
+            <ul>
+                <li><a>WEARLOOPS</a></li>
+                <li><a>Policies</a></li>
+                <li><a>Legal</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Help</h2>
+            <ul>
+                <li><a>Customer Support</a></li>
+                <li><a>Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h2>Social Media</h2>
+        <ul>
+            <li><a><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+            <li><a><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="bottom-bar">
+        <ul>
+            <li id="copyright">&#169; 2020 WEARLOOPS</li>
+            <li><a>Terms of use</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Internet-based ads</a></li>
+        </ul>
+    </div>
+
+    <script src="./resources/messages.js"></script>
+
+</footer>
+
+</body>
+</html>
